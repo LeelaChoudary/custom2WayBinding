@@ -13,6 +13,7 @@ export class RectComponent {
 //  @Output() sizeChange=new EventEmitter<{width:string,height:string}>(); 
 
  //we can also use model function for 2 way bindable property .It helps to not write input and output
+ //model fn is available after angular 17.2 version
  size=model.required<{width:string,height:string}>()
   onReset() {
     // ...
